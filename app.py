@@ -5,8 +5,6 @@ from pathlib import Path
 from process_data import extract_text
 from semantic import semantic_sections
 from structure_metadata import generate_metadata
-from process_data import extract_text
-
 
 st.title("Automated Document Metadata Generator")
 
