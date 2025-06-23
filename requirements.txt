@@ -22,5 +22,7 @@ spacy-legacy==3.0.12
 spacy-loggers==1.0.5
 streamlit==1.46.0
 PyMuPDF==1.26.1
+easyocr==1.7.2
+spacy-model-en_core_web_sm
 
 
