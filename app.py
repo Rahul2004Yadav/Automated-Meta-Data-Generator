@@ -1,9 +1,18 @@
 import streamlit as st
+import subprocess
+import sys
 from pathlib import Path
 from process_data import extract_text
 from semantic import semantic_sections
 from structure_metadata import generate_metadata
 
+# Ensure spaCy model is downloaded (cached per session)
+@st.cache_resource
+def ensure_spacy_model():
+    subprocess.run([sys.executable, "-m", "spacy", "download", "en_core_web_sm"], check=True)
+ensure_spacy_model()
+
+# Main app
 st.title("Automated Document Metadata Generator")
 
 uploaded_file = st.file_uploader("Upload a document (.txt, .docx, .pdf)", type=["txt", "docx", "pdf"])
