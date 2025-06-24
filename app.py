@@ -1,7 +1,5 @@
 import streamlit as st
 from pathlib import Path
-
-# Import your core functions from other files
 from process_data import extract_text
 from semantic import semantic_sections
 from structure_metadata import generate_metadata
@@ -11,7 +9,6 @@ st.title("Automated Document Metadata Generator")
 uploaded_file = st.file_uploader("Upload a document (.txt, .docx, .pdf)", type=["txt", "docx", "pdf"])
 
 if uploaded_file is not None:
-    # Save the uploaded file to a temp location
     temp_path = Path("temp_" + uploaded_file.name)
     with open(temp_path, "wb") as f:
         f.write(uploaded_file.getbuffer())
