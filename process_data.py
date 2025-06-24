@@ -11,8 +11,8 @@ reader = easyocr.Reader(['en'])
 from dotenv import load_dotenv
 load_dotenv()
 parser = LlamaParse(api_key=os.environ.get('LLAMA_PARSE_API_KEY'), result_type="text")
+#extract using llamaparse& easyocr
 def extract_text(path: str) -> str:
-    """Extract text using both LlamaParse and EasyOCR working together."""
     ext = path.lower().split('.')[-1]
     if ext == 'txt':
         return Path(path).read_text(encoding='utf-8')
@@ -36,5 +36,5 @@ def extract_text(path: str) -> str:
         # Combine both results
         combined_text = f"{llama_text}\n\n--- OCR Content ---\n{ocr_text}".strip()
         return combined_text if combined_text else "No text found" 
-    else:
-        raise ValueError(f"Unsupported file type: {ext}")
+    # else:
+    #     raise ValueError(f"Unsupported file type: {ext}")
