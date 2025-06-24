@@ -23,6 +23,7 @@ spacy-loggers==1.0.5
 streamlit==1.46.0
 PyMuPDF==1.26.1
 easyocr==1.7.2
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.6.0/en_core_web_sm-3.6.0-py3-none-any.whl#egg=en_core_web_sm
 
 
 
