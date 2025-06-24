@@ -36,5 +36,4 @@ def extract_text(path: str) -> str:
         # Combine both results
         combined_text = f"{llama_text}\n\n--- OCR Content ---\n{ocr_text}".strip()
         return combined_text if combined_text else "No text found" 
-    # else:
-    #     raise ValueError(f"Unsupported file type: {ext}")
+    
