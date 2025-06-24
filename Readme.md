@@ -1,6 +1,4 @@
-# 📄 Automated Document Metadata Generator
-
-![Project Logo Placeholder](https://via.placeholder.com/150x50.png?text=Metadata+Generator)
+# 📄 Automated Metadata Generator
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/downloads/)
@@ -143,13 +141,6 @@ The app is deployed and accessible at:
 
 ---
 
-
-
-## 📜 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
----
 
 
 
