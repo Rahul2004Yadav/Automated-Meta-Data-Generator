@@ -140,6 +140,10 @@ The app is deployed and accessible at:
 3. **View the generated metadata** in JSON format.
 
 ---
+## Demo video
+
+link:
+**https://drive.google.com/file/d/1DKjKwkY8UlQrSN_BCo1UVNXUGJSMPQKt/view?usp=sharing**
 
 
 
